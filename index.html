@@ -31,14 +31,14 @@
 
      <!-- banner section is started here  -->
       <div class="flex gap-5 justify-center mt-10">
-        <button class="btn font-bold text-xl">Donation</button>
-        <button class="btn font-bold text-xl">History</button>
+        <button id="donation-button" class="btn font-bold text-xl">Donation</button>
+        <button id="history-button" class="btn font-bold text-xl">History</button>
 
       </div>
       <!-- banner section is ends here  -->
 
       <!-- card section is started here  -->
-       <div class="">
+       <div id="card">
         <div class="flex mt-10 gap-10 w-[80%] mx-auto">
             <!-- image section  -->
                 <div class="w-[50%]">
@@ -85,13 +85,14 @@
        <!-- card section is ends here  -->
 
        <!-- history container is starts here  -->
-        <div>
-
+        <div id="transaction-history" class="mt-10 py-3 bg-slate-300 border rounded-lg hidden">
+            <h1 class="text-2xl font-bold text-center">transaction history</h1>
         </div>
         <!-- history container is ends here  -->
 
 <script src="./noakhali.js"></script>
 <script src="./feni.js"></script>
 <script src="./quota.js"></script>
+<script src="./toogle.js"></script>
 </body>
 </html>
