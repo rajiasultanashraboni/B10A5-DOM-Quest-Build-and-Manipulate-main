@@ -84,6 +84,27 @@
        </div>
        <!-- card section is ends here  -->
 
+        <!-- modal is starts here  -->
+            <!-- Trigger Button -->
+            <!-- <button onclick="document.getElementById('donation_modal').showModal()" class="btn bg-blue-500 text-white rounded-md px-4 py-2">Open Modal</button> -->
+        
+            <!-- Modal Element -->
+            <dialog id="donation_modal" class="modal">
+                <div class="modal-box text-center">
+                    <h3 class="text-2xl font-bold text-gray-800">Congrats!</h3>
+                    <img src="./assets/coin.png" alt="Coin Icon" class="w-12 h-12 mx-auto my-4">
+                    <p class="text-gray-600">You Have Donated for Humankind</p>
+                    <p class="text-lg font-bold text-gray-800 mt-2">Successfully</p>
+                    <div class="modal-action justify-center">
+                        <form method="dialog">
+                            <button id="close-button" class="btn bg-gray-200 text-gray-700 rounded-md px-4 py-2">close confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        
+        <!-- modal is ends here  -->
+
        <!-- history container is starts here  -->
         <div id="transaction-history" class="hidden">
             <div class="mt-10 py-3 bg-slate-300 border rounded-lg ">

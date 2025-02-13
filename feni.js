@@ -24,7 +24,13 @@ if(feniInputValueNumber>navbarAmountNumber){
     alert('You donot have sufficient balance');
     return;
 }
-const feniBalance = feniInputValueNumber+feniAddMoneyNumber;
+
+// modal section is added here 
+const modal = document.getElementById('donation_modal');
+modal.showModal();
+
+document.getElementById('close-button').addEventListener('click', function(){
+    const feniBalance = feniInputValueNumber+feniAddMoneyNumber;
 // console.log(feniBalance)
 document.getElementById('feni-add-money').innerText = feniBalance;
 
@@ -32,6 +38,7 @@ const remainingNavbarAmount = navbarAmountNumber-feniInputValueNumber;
 // console.log(remainingNavbarAmount)
 
 document.getElementById('navbar-amount').innerText = remainingNavbarAmount;
+})
 
 // show transaction is here 
 

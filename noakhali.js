@@ -24,14 +24,24 @@ if(noakhaliInputValueNumber>navbarAmountNumber){
     alert('You donot have sufficient balance');
     return;
 }
-const noakhaliBalance = noakhaliInputValueNumber+noakhaliAddMoneyNumber;
-// console.log(noakhaliBalance)
-document.getElementById('noakhali-add-money').innerText = noakhaliBalance;
+// modal section is added here 
+const modal = document.getElementById('donation_modal');
+modal.showModal();
 
-const remainingNavbarAmount = navbarAmountNumber-noakhaliInputValueNumber;
-// console.log(remainingNavbarAmount)
+// close confirmation e click korle calculation execute hobe 
 
-document.getElementById('navbar-amount').innerText = remainingNavbarAmount;
+document.getElementById('close-button').addEventListener('click', function(){
+    const noakhaliBalance = noakhaliInputValueNumber+noakhaliAddMoneyNumber;
+    // console.log(noakhaliBalance)
+    document.getElementById('noakhali-add-money').innerText = noakhaliBalance;
+
+    const remainingNavbarAmount = navbarAmountNumber-noakhaliInputValueNumber;
+    // console.log(remainingNavbarAmount)
+
+    document.getElementById('navbar-amount').innerText = remainingNavbarAmount;
+});
+
+
 
 // show transaction is here 
 

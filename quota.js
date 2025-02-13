@@ -24,7 +24,13 @@ if(quotaInputValueNumber>navbarAmountNumber){
     alert('You donot have sufficient balance');
     return;
 }
-const quotaBalance = quotaInputValueNumber+quotaAddMoneyNumber;
+
+// modal section is added here 
+const modal = document.getElementById('donation_modal');
+modal.showModal();
+
+document.getElementById('close-button').addEventListener('click', function(){
+    const quotaBalance = quotaInputValueNumber+quotaAddMoneyNumber;
 // console.log(quotaBalance)
 document.getElementById('quota-add-money').innerText = quotaBalance;
 
@@ -32,6 +38,11 @@ const remainingNavbarAmount = navbarAmountNumber-quotaInputValueNumber;
 // console.log(remainingNavbarAmount)
 
 document.getElementById('navbar-amount').innerText = remainingNavbarAmount;
+})
+
+
+// transaction section is here 
+
 const card = document.createElement('div');
 card.classList.add('bg-white', 'shadow-lg', 'rounded-lg', 'p-4', 'mt-4', 'w-100', 'text-left', 'border', 'border-gray-400');
 
