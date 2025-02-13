@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- navbar section is started here  -->
+    <nav class="w-[80%] mx-auto p-5">
+        <div class="lg:flex lg:justify-between lg:items-center space-y-4 lg:space-y-0 text-center">
+            <!-- Blog Button -->
+            <div class="lg:text-left">
+                <a href="./index.html"><button class="btn bg-lime-400 font-bold text-xl">Home</button></a>
+            </div>
+    
+            <!-- Logo and Title -->
+            <div class="flex gap-3 items-center justify-center">
+                <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
+                <p class="text-xl font-bold">Donate Bangladesh</p>
+            </div>
+    
+            <!-- Coin and Amount -->
+            <div class="flex gap-3 items-center justify-center">
+                <img src="./assets/coin.png" alt="Coin" class="w-8 h-8">
+                <button class="font-bold text-xl btn">BDT <span id="navbar-amount">5500</span></button>
+            </div>
+        </div>
+    </nav>
+     <!-- navbar section is ends here  -->
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+</body>
+</html>
